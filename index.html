@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <body>
+       <video autoplay loop width="100%">
+
+    <source src="Rick Astley  Never Gonna Give You Up Official Music Video.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+      <script>
+         // Change the variables below to your liking
+         const currentURL = "Rick Astley  Never Gonna Give You Up Official Music Video.mp4";
+         const pageTitle = "载入中...";
+         // End of changable variables
+         
+         function setTitle() {
+            document.title = pageTitle;
+         }
+         
+         function redirect() {
+            window.location.href = currentURL;
+         }
+         
+         function onload() {
+            setTitle();
+            redirect();
+         }
+         
+         window.onload = onload();
+       </script>
+   </body>
+</html>
